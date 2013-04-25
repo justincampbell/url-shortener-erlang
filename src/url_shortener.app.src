@@ -1,0 +1,18 @@
+%%-*- mode: erlang -*-
+{application, url_shortener,
+ [
+  {description, "url_shortener"},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  crypto,
+                  mochiweb,
+                  webmachine
+                 ]},
+  {mod, { url_shortener_app, []}},
+  {env, []}
+ ]}.
